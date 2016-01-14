@@ -14,6 +14,7 @@ var todo = {
     }, function(err, res){
       if (err) { throw err; }
       if (!debug) {
+        console.log('this is data', res);
         todo.setup(res.todos);
       } else {
         todo.setup();

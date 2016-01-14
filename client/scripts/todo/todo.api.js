@@ -8,6 +8,7 @@ todo.api = {
     request.onload = function() {
       if (request.status >= 200 && request.status < 400){
         // Success!
+        console.log('///////////////', request.responseText);
         var data = JSON.parse(request.responseText);
         callback(null, data);
       } else {
